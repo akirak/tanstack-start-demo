@@ -1,10 +1,11 @@
 import { createRootRoute } from '@tanstack/react-router'
 import { Outlet, ScrollRestoration } from '@tanstack/react-router'
-import { Body, Head, Html, Meta, Scripts } from '@tanstack/start'
+import { Meta, Scripts } from '@tanstack/start'
 import * as React from 'react'
 
 export const Route = createRootRoute({
-  meta: () => [
+  head: () => ({
+    meta: [
     {
       charSet: 'utf-8',
     },
@@ -16,6 +17,7 @@ export const Route = createRootRoute({
       title: 'TanStack Start Starter',
     },
   ],
+  }),
   component: RootComponent,
 })
 
@@ -29,15 +31,15 @@ function RootComponent() {
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <Html>
-      <Head>
+    <html>
+      <head>
         <Meta />
-      </Head>
-      <Body>
+      </head>
+      <body>
         {children}
         <ScrollRestoration />
         <Scripts />
-      </Body>
-    </Html>
+      </body>
+    </html>
   )
 }
