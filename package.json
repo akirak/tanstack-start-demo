@@ -8,8 +8,8 @@
     "start": "vinxi start"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Akira Komamura",
+  "license": "MIT",
   "description": "",
   "dependencies": {
     "@tanstack/react-router": "^1.64.0",
