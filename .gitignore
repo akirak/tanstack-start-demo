@@ -1,3 +1,5 @@
 node_modules
 count.txt
 *.timestamp_*.js
+.vinxi
+.output
