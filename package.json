@@ -1,7 +1,11 @@
 {
   "name": "hello-tanstack-start",
-  "version": "1.0.0",
   "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Akira Komamura",
+  "license": "MIT",
+  "keywords": [],
   "scripts": {
     "eslint": "eslint .",
     "eslint:fix": "eslint . --fix",
@@ -9,10 +13,6 @@
     "build": "vinxi build",
     "start": "vinxi start"
   },
-  "keywords": [],
-  "author": "Akira Komamura",
-  "license": "MIT",
-  "description": "",
   "dependencies": {
     "@tanstack/react-router": "^1.64.0",
     "@tanstack/start": "^1.64.0",
