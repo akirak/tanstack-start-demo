@@ -7,7 +7,9 @@ import {
 
 import { createRouter } from './router'
 
-export default createStartHandler({
+const handler = createStartHandler({
   createRouter,
   getRouterManifest,
 })(defaultStreamHandler)
+
+export default handler

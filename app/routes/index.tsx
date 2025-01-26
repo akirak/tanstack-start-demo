@@ -32,6 +32,7 @@ function Home() {
 
   return (
     <button
+      type="button"
       onClick={() => {
         updateCount({ data: 1 }).then(() => {
           router.invalidate()
